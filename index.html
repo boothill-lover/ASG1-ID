@@ -9,22 +9,49 @@
 </head>
 <body>
     <header>
-    <main>
-       <section>
-            <div class="main">
-                <nav>
-                    <div class="container" onclick="myFunction(this)">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
-                    </div>
-                </nav>
-                <h2>Introduction</h2>
-                <p>This is the introduction section of the assignment.</p>
-            </div>
-       </section>
-    </main>
+        <!-- side nav bar -->
+        <div id="sidenavbar" class="sidenav">
+            <a href="#artists">Artists</a>
+            <a href="#listen">Listen</a>
+            <a href="#tickets">Tickets</a>
+        </div>
+
+        </div>
+
+        <!-- hamburger menu -->
+        <div class="main">
+            <nav>
+                <div class="container" onclick="myFunction(this); togglenav()" id="navicon">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </nav>
+            
+            <!-- cta banner -->
+            <section id="banner">
+                <div class="cta">
+                <a href="#tickets"><img src="images/logo.png" class="ctalogo"></a>
+                <input type="button" class="ctabutton" onClick="document.getElementById('tickets').scrollIntoView();" value="Buy Tickets Now">
+                </div>
+            </section>
+        </div>
     </header>
+
+    <main>
+        <section id="artists">
+                <h2>Artists</h2>
+                <p>This is the introduction section of the assignment.</p>
+       </section>
+
+        <section id="listen">
+            <h2>Listen</h2>
+            <p>This is the listen section of the assignment.</p>
+
+        <section id="tickets">
+            <h2>Tickets</h2>
+            <p>This is the tickets section of the assignment.</p>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2025 Carolyn Ong</p>
