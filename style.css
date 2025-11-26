@@ -18,8 +18,8 @@
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
-    color: #b1a2a2;
+    font-size: 50px;
+    color: #d1c6c6;
     display: block;
     transition: 0.3s;
     font-family: "Sofia Sans Condensed", sans-serif;
@@ -42,7 +42,11 @@
     height: 5px;
     background-color: #fff;
     margin: 6px 0;
-    transition: 0.3s;
+    transition: 0.5s;
+}
+
+#navicon {
+    transition: right 0.3s ease;
 }
 
 .change .bar1 {
@@ -66,7 +70,7 @@
 
 .cta {
     position: absolute;
-    width: 20%;
+    width: clamp(200px, 35vw, 350px);
     bottom: 20%;
     left: 10%;
 }
@@ -74,17 +78,19 @@
 .ctalogo {
     height: auto;
     width: 100%;
+    max-width: 320px;
+    min-width: 180px;
     margin-bottom: 20px;
-    padding-left: 5%;
 }
 
 .ctabutton {
     background-color: #a70909;
     color: white;
-    padding: 20px 35%;
+    width: 100%;
+    padding: clamp(10px, 1.8vw, 16px) clamp(20px, 3vw, 50px);
     text-decoration: none;
     display: inline-block;
-    font-size: 190%;
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
     border: none;
     border-radius: 2px;
     cursor: pointer;
