@@ -6,7 +6,6 @@
     color: white;
 }
 
-/* to do: responsive nav bar */
 .sidenav {
     height: 100%;
     width: 0;
@@ -17,7 +16,7 @@
     overflow-x: hidden;
     top: 0;
     right: 0;
-    background-color: #231b1b87;
+    background-color: #27171787;
     transition: 0.3s;
     padding-top: 60px;
 }
@@ -25,8 +24,8 @@
 .sidenav a {
     padding: 20px 8px 8px 40px;
     text-decoration: none;
-    font-size: 45px;
-    color: #d1c6c6;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    color: #d38e8e;
     display: block;
     transition: 0.3s;
     font-family: "Sofia Sans Condensed", sans-serif;
@@ -137,7 +136,6 @@ footer p {
 
 #artists {
     background-color: black;
-    padding: 0px 350px 0px 350px;
 }
 
 .title {
@@ -175,16 +173,8 @@ footer p {
     padding: 0 clamp(20px, 1vw, 40px);
 }
 
-/* to do: artist section */
-.artistname {
-    font-family: "Sofia Sans Condensed", sans-serif;
-    font-weight: 600;
-    color: white;
-    font-size: 30px;
-}
-
 .artistpic {
-    width: 220px;
+    width: clamp(60px, 14vw, 190px);
     box-shadow: 0px 0px 50px #ffffff3d;
     transition: 0.3s ease-in-out;
 }
@@ -194,15 +184,41 @@ footer p {
     transition: 0.3s ease-in-out;
 }
 
+.artistname {
+    font-family: "Sofia Sans Condensed", sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
 .artistrole {
     font-family: "Rock Salt", cursive;
     color: #969696;
-    font-size: 16px;
+    font-size: clamp(0.8rem, 1vw, 1.2rem);
 }
 
 ul {
     list-style-type: none;
-    padding: 0;
+    padding: clamp(10px, 1.8vw, 20px);
+}
+
+.memberrow {
+    display: flex;
+    justify-content: center;
+}
+
+.banddesc {
+    font-family: "Sofia Sans Condensed", sans-serif;
+    color: #b4b4b4;
+    font-size: clamp(1.2rem, 1vw, 1.6rem);
+    text-align: center;
+    font-style:italic;
+}
+
+.members {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 250px 50px 250px;
 }
 
 html {
