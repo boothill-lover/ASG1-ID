@@ -316,7 +316,7 @@ ul {
 .spotify:hover {
     fill: #1DB954;
     transition: 0.3s ease-in-out;
-    filter: drop-shadow(0px 0px 10px #068532);
+    filter: drop-shadow(0px 0px 10px #03752b);
 }
 
 .applemusic {
@@ -339,8 +339,121 @@ ul {
     filter: drop-shadow(0px 0px 10px #a40101);
 }
 
+/* ================== TICKETS SECTION ================== */
+#tickets {
+    background-image:url('images/ticketsbackground.png');
+    padding: 50px 0 100px 0;
+    background-size: cover;
+}
+
+.ticketh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px 50px 0px;
+}
+
+/* let me try this */
+.ticketh p::before {
+    /* empty content so it will show up */
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 14px;
+    background-color: #000000;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: -1;
+    /* translate x y z */
+    bottom: -9px;
+
+}
+
+.ticketh p {
+    font-family: "Rock Salt", cursive;
+    font-size: clamp(0.9rem, 3vw, 1.5rem);
+    color: white;
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    padding: 0 clamp(20px, 1vw, 40px);
+}
+
+.ticketcontainer {
+    background-color: black;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: clamp(50px, 10vw, 150px);
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 0.5%;
+}
+
+.buyticket {
+    background-color: #a70909;
+    color: white;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    border-radius: 1px;
+    border: none;
+    cursor: pointer;
+    font-family: "Sofia Sans Condensed", sans-serif;
+    transition: 0.3s ease-in-out;
+    margin: 0;
+    width: clamp(100px, 15vw, 150px);
+}
+
+.buyticket:hover {
+    background-color: #c02222;
+    box-shadow: 0px 0px 10px #a70909;
+    transition: 0.3s ease-in-out;
+}
+
+.dateloc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "Sofia Sans Condensed", sans-serif;
+    gap: 10px;
+}
+
+.date {
+    color: #a70909;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    margin: 0;
+}
+
+.location {
+    color: #797979;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    margin: 0;
+}
+
+.soldout {
+    background-color: #797979;
+    color: #000;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    border-radius: 1px;
+    border: none;
+    cursor: pointer;
+    font-family: "Sofia Sans Condensed", sans-serif;
+    transition: 0.3s ease-in-out;
+    margin: 0;
+    width: clamp(100px, 15vw, 150px);
+    font-weight: 600;
+    cursor: default;
+}
+
+.soldout:hover {
+    cursor: default;
+}
+
 html {
     /* for the smooth scrolling effect when i click on a button */
     scroll-behavior: smooth;
-    background-color:darkgrey;
+    background-color:black;
 }
