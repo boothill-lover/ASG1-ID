@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
 
 ::selection {
     background-color: #a70909;
@@ -134,8 +136,11 @@ footer p {
     padding: 0;
 }
 
+/* ================== ARTISTS SECTION ================== */
+
 #artists {
     background-color: black;
+    padding: 50px 0 150px 0;
 }
 
 .title {
@@ -221,7 +226,121 @@ ul {
     padding: 0 250px 50px 250px;
 }
 
+/* ================== LISTEN SECTION ================== */
+#listen {
+    background-color: #000;
+    padding: 0px 0px 100px 0px;
+}
+
+.listenheader {
+    font-family: "Rock Salt", cursive;
+    color: white;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    text-align: center;
+    padding: 50px 0 20px 0;
+}
+
+.albumsongs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 0px;
+}
+
+.album {
+    display: block;
+    width: clamp(200px, 25vw, 400px);
+    transition: 0.3s ease-in-out;
+    margin: 0 0;
+}
+
+.album:hover {
+        box-shadow: 0px 0px 50px #ffffff3d;
+        transition: 0.3s ease-in-out;
+}
+
+.songsL {
+    font-family: "Mynerve", cursive;
+    color: #717171;
+    font-size: clamp(0.8rem, 1.5vw, 1.3rem);
+    text-align: right;
+    margin: 0;
+    list-style-type: none;
+    line-height: clamp(1.6rem, 2.5vw, 2.3rem);
+}
+
+.songsR {
+    font-family: "Mynerve", cursive;
+    color: #717171;
+    font-size: clamp(0.8rem, 1.5vw, 1.3rem);
+    text-align: left;
+    margin: 0;
+    list-style-type: none;
+    line-height: clamp(1.6rem, 2.5vw, 2.3rem);
+}
+
+.divider {
+    width: 5%;
+    background-color: #303030;
+    height: 5px;
+    border-radius: 2px;
+    margin: 30px auto 50px auto;
+}
+
+.listenon {
+    font-family: "Sofia Sans Extra Condensed", sans-serif;
+    color: #fff;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    text-align: center;
+    margin-top: 0;
+}
+
+.streamicons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(20px, 5vw, 50px);
+    margin-top: 20px;
+}
+
+.listenicon {
+    width: clamp(20px, 4vw, 60px);
+    transition: 0.3s ease-in-out;
+}
+
+.spotify {
+    fill: #797979;
+}
+
+.spotify:hover {
+    fill: #1DB954;
+    transition: 0.3s ease-in-out;
+    filter: drop-shadow(0px 0px 10px #068532);
+}
+
+.applemusic {
+    fill: #797979;
+}
+
+.applemusic:hover {
+    fill: #fff;
+    transition: 0.3s ease-in-out;
+    filter: drop-shadow(0px 0px 10px #949494);
+}
+
+.youtube {
+    fill: #797979;
+}
+
+.youtube:hover {
+    fill: #ff2424;
+    transition: 0.3s ease-in-out;
+    filter: drop-shadow(0px 0px 10px #a40101);
+}
+
 html {
     /* for the smooth scrolling effect when i click on a button */
     scroll-behavior: smooth;
+    background-color:darkgrey;
 }
