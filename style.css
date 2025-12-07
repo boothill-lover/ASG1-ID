@@ -418,7 +418,8 @@ ul {
     justify-content: center;
     align-items: center;
     font-family: "Sofia Sans Condensed", sans-serif;
-    gap: 10px;
+    gap: 7px;
+    font-style: italic;
 }
 
 .date {
@@ -626,9 +627,10 @@ input:focus {
         height: 60vh;
     }
 
-    .main {
+    .main, .pbanner {
         padding: 0px 20px 0px 20px;
         height: 65vh;
+        background-position: center;
     }
 
     .cta {
@@ -658,6 +660,10 @@ input:focus {
 
     .albumsongs {
         gap: 10px;
+    }
+
+    .divider {
+        height: 3px;
     }
 
     .listenon {
