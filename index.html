@@ -16,10 +16,8 @@
             <a href="#tickets">Tickets</a>
         </div> <!-- sidenavbar -->
 
-        </div>
-
-        <!-- hamburger menu -->
         <div class="main">
+            <!-- hamburger menu -->
             <nav>
                 <div class="navicon" onclick="myFunction(this); togglenav()" id="navicon">
                 <div class="bar1"></div>
@@ -44,7 +42,6 @@
                 <div>
                 <p>ARTISTS</p>
                 </div>
-                
             </div> <!-- title -->
             <div class="members">
                 <div class="memberrow">
@@ -150,7 +147,6 @@
                 <div>
                 <p>RUSH! TOUR</p>
                 </div>
-                
             </div> <!-- title -->
 
             <div class="ticketcontainer">
@@ -158,8 +154,7 @@
                     <p class="date">09.21</p>
                     <p class="location">\\ New York, NY</p>
                 </div>
-                <!-- add link to ticket buy page -->
-                <button class="buyticket">Purchase</button>
+                <button class="buyticket" onclick="purchase(this)" data-date="21 September, Friday 8:00PM" data-location="Madison Square Garden">Purchase</button>
             </div>
 
              <div class="ticketcontainer">
@@ -183,8 +178,7 @@
                     <p class="date">09.27</p>
                     <p class="location">\\ Singapore</p>
                 </div>
-            <!-- add link to ticket buy page -->
-            <button class="buyticket">Purchase</button>
+            <button class="buyticket" onclick="purchase(this)" data-date="27 September, Friday 8:00PM" data-location="EXPO HALL 1 (Apex)">Purchase</button>
             </div>
 
             <div class="ticketcontainer">
@@ -192,13 +186,12 @@
                     <p class="date">10.01</p>
                     <p class="location">\\ Oakland, CA</p>
                 </div>
-                <!-- add link to ticket buy page -->
-                <button class="buyticket">Purchase</button>
+                <button class="buyticket" onclick="purchase(this)" data-date="1 October, Monday 8:00PM" data-location="Oakland Arena">Purchase</button>
             </div>
 
             <div class="ticketcontainer">
                     <div class="dateloc">
-                        <p class="date">09.25</p>
+                        <p class="date">10.05</p>
                         <p class="location">\\ Tokyo, Japan</p>
                     </div>
                     <button class="soldout">SOLD OUT</button>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Maneskin</title>
+</head>
+<body>
+    <header>
+        <!-- side nav bar -->
+        <div id="sidenavbar" class="sidenav">
+            <a href="index.html#artists">Artists</a>
+            <a href="index.html#listen">Listen</a>
+            <a href="index.html#tickets">Tickets</a>
+        </div> <!-- sidenavbar -->
+
+        <nav>
+            <div class="navicon" onclick="myFunction(this); togglenav()" id="navicon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </nav>
+        <section class="pbanner"></section>
+    </header>
+
+    <main>
+        <div id="purchase">
+            <div class="title">
+                <div>
+                    <p>PURCHASE</p>
+                    </div>
+                </div>
+            </div> <!-- title -->
+
+            <div class="dtl">
+                <div class="datetime">
+                    <img src="images/datetimeicon.png" alt="datetimeicon">
+                    <p id="dt"></p>
+                </div> <!-- dtl -->
+
+                <div class="location">
+                    <img src="images/locationicon.png" alt="locationicon">
+                    <p id="loc"></p>
+                </div> <!-- location -->
+            </div> <!-- dtl -->
+
+           <div class="formcontainer">
+
+                <div class="inputs">
+                    <div class="row">
+                    <div class="field">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname">
+                    </div>
+                    <div class="field">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname">
+                    </div>
+                    </div>
+
+                    <div class="row">
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="text" id="email">
+                    </div>
+                    <div class="field">
+                        <label for="qty">Quantity</label>
+                        <input type="number" id="qty" min="1" value="1">
+                    </div>
+                    </div>
+
+                    <div class="field">
+                    <label for="address">Address</label>
+                    <input type="text" id="address">
+                    </div>
+
+                    <div class="row">
+                    <div class="field">
+                        <label for="exp">Expiry Date</label>
+                        <input type="text" id="exp">
+                    </div>
+                    <div class="field">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv">
+                    </div>
+                    </div>
+
+                    <button class="buy" onclick="alertPurchase()">Buy Tickets Now</button>
+                </div> <!-- inputs -->
+
+                <div class="summary">
+                    <h3>Summary</h3>
+                    <p class="summarymain">Tickets <span>$230</span></p>
+                    <p class="summarydesc">$230 x1</p>
+                    <p class="summarymain">Booking Fee <span>$6</span></p>
+                    <hr>
+                    <p class="total">Total <span>$236</span></p>
+                    <p class="summarydesc">Payment: Visa</p>
+                </div> <!-- summary -->
+            </div> <!-- formcontainer -->
+            </div> <!-- purchase -->
+
+            
+            
+    </main>
+
+       <footer>
+        <a><img src="images/footerlogo.png" class="footerlogo"></a>
+        <p>&copy; 2025 Carolyn Ong</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
