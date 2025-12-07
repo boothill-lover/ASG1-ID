@@ -9,7 +9,7 @@
 }
 
 .sidenav {
-    height: 100%;
+    height: 100vh;
     width: 0;
     position: absolute;
     /* makes sure its on top */
@@ -621,6 +621,10 @@ input:focus {
 /* ================== MOBILE RESPONSIVE ================== */
 /* smaller than 768px */
 @media screen and (max-width: 768px) {
+
+    .sidenav {
+        height: 60vh;
+    }
 
     .main {
         padding: 0px 20px 0px 20px;
