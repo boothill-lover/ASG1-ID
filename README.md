@@ -27,6 +27,7 @@ Main features
 
 ## References
 [W3 Schools: How to Hide Arrows From Input Number](https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp)
+[W3 Schools: How to Create a Hamburger Menu](https://www.w3schools.com/howto/howto_css_menu_icon.asp)
 [W3 Schools: Cursor Types](https://www.w3schools.com/cssref/pr_class_cursor.php)
 [W3 Schools: How to Create a Side Navigation](https://www.w3schools.com/howto/howto_js_sidenav.asp)
 [W3 Schools: Pseudo-Element ::before](https://www.w3schools.com/cssref/sel_before.php)
