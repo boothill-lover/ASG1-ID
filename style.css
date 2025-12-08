@@ -603,7 +603,7 @@ input:focus {
     color: #CF5151;
 }
 
-.summarymain {
+.summarymain, .ticketmain {
     font-size: 1.1rem;
     color: #FFBCBC;
 }

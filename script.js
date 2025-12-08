@@ -49,6 +49,7 @@ function alertPurchase() {
 const qtyInput = document.getElementById('qty');
 const summaryDesc = document.querySelector('.summarydesc');
 const totalSpan = document.querySelector('.total span');
+const ticketmainSpan = document.querySelector('.ticketmain span');
 
 const ticketPrice = 230;
 const bookingFee = 6;
@@ -74,6 +75,7 @@ function updateSummary() {
 
     summaryDesc.textContent = `$${ticketPrice} x${qty}`;
     totalSpan.textContent = `$${total}`;
+    ticketmainSpan.textContent = `$${ticketsTotal}`;
 }
 
 // Update in real-time
